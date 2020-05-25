@@ -10,11 +10,11 @@ with open("part.txt", "r") as input:
     for line in input:
       datalist = line.strip().split("    ")
       if (len(datalist) == 6) : 
-        date, time,store, department, cost, paymentType = datalist
+        date, time,store, department, amount, paymentType = datalist
 
         # output intermediate key-value pairs
-        output.write(store + "\t" + cost + "\n")
+        output.write(store + "\t" + amount + "\n")
 
         # display to console (not required - just for the user)
-        print(store + "\t" + cost + "\n")
+        print(store + "\t" + amount + "\n")
 
