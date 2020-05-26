@@ -9,10 +9,7 @@ Basic Python introduction and concepts needed in preparation for working with ma
 - Install Visual Studio Code for text editing
 - Add Open Command Window Here as Administrator to your File Explorer context menu.
 
-```PowerShell
-- choco install anaconda3 -y
-- choco install vscode -y
-```
+See: [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bigdata)
 
 ## Case 1:  Local file-based
 
