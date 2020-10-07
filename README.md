@@ -35,16 +35,16 @@ PowerShell and Bash use the same commands:
 
 ```Bash
 cat part.txt
-cat part.txt | python 11mapper.py
-cat part.txt | python 11mapper.py | sort
-cat part.txt | python 11mapper.py | sort  | python 13reducer.py
+cat part.txt | python 21mapper.py
+cat part.txt | python 21mapper.py | sort
+cat part.txt | python 21mapper.py | sort  | python 22reducer.py
 ```
 To Process the larger file i.e., purchases.txt. we need to run the following commands,
 ```Bash
 cat purchases.txt
-cat purchases.txt | python 11mapper.py
-cat purchases.txt | python 11mapper.py | sort
-cat purchases.txt | python 11mapper.py | sort  | python 13reducer.py
+cat purchases.txt | python 21mapper.py
+cat purchases.txt | python 21mapper.py | sort
+cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py
 ```
 ## References
 
