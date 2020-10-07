@@ -18,6 +18,12 @@ py shopping_mapper.py
 py shopping_sorter.py
 py shopping_reducer.py
 ```
+To run the above commands in powershell,
+```PowerShell
+python shopping_mapper.py
+python shopping_sorter.py
+python shopping_reducer.py
+```
 
 ## Case 2:  Use standard input and output
 
