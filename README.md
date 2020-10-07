@@ -14,9 +14,9 @@ See: [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bi
 ## Case 1:  Local file-based
 
 ```PowerShell
-py 11mapper.py
-py 12sorter.py
-py 13reducer.py
+py shopping_mapper.py
+py shopping_sorter.py
+py shopping_reducer.py
 ```
 
 ## Case 2:  Use standard input and output
@@ -29,12 +29,17 @@ PowerShell and Bash use the same commands:
 
 ```Bash
 cat part.txt
-cat part.txt | python 21mapper.py
-cat part.txt | python 21mapper.py | sort
-cat part.txt | python 21mapper.py | sort  | python 22reducer.py
-
+cat part.txt | python shopping_mapper.py
+cat part.txt | python shopping_mapper.py | sort
+cat part.txt | python shopping_mapper.py | sort  | python shopping_reducer.py
 ```
-
+To Process the larger file i.e., purchases.txt. we need to run the following commands,
+```Bash
+cat purchases.txt
+cat purchases.txt | python shopping_mapper.py
+cat purchases.txt | python shopping_mapper.py | sort
+cat purchases.txt | python shopping_mapper.py | sort  | python shopping_reducer.py
+```
 ## References
 
 - [Udacity "Introduction to Hadoop and MapReduce"](https://classroom.udacity.com/courses/ud617/)
