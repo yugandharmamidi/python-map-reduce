@@ -13,7 +13,7 @@ See: [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bi
 
 ## Case 1:  Local file-based
 
-```PowerShell Commands
+```PowerShell
 py 11mapper.py
 py 12sorter.py
 py 13reducer.py
