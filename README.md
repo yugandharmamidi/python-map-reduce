@@ -14,15 +14,15 @@ See: [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bi
 ## Case 1:  Local file-based
 
 ```PowerShell
-py shopping_mapper.py
-py shopping_sorter.py
-py shopping_reducer.py
+py 11mapper.py
+py 12sorter.py
+py 13reducer.py
 ```
 To run the above commands in powershell,
 ```PowerShell
-python shopping_mapper.py
-python shopping_sorter.py
-python shopping_reducer.py
+python 11mapper.py
+python 12sorter.py
+python 13reducer.py
 ```
 
 ## Case 2:  Use standard input and output
@@ -35,16 +35,16 @@ PowerShell and Bash use the same commands:
 
 ```Bash
 cat part.txt
-cat part.txt | python shopping_mapper.py
-cat part.txt | python shopping_mapper.py | sort
-cat part.txt | python shopping_mapper.py | sort  | python shopping_reducer.py
+cat part.txt | python 11mapper.py
+cat part.txt | python 11mapper.py | sort
+cat part.txt | python 11mapper.py | sort  | python 13reducer.py
 ```
 To Process the larger file i.e., purchases.txt. we need to run the following commands,
 ```Bash
 cat purchases.txt
-cat purchases.txt | python shopping_mapper.py
-cat purchases.txt | python shopping_mapper.py | sort
-cat purchases.txt | python shopping_mapper.py | sort  | python shopping_reducer.py
+cat purchases.txt | python 11mapper.py
+cat purchases.txt | python 11mapper.py | sort
+cat purchases.txt | python 11mapper.py | sort  | python 13reducer.py
 ```
 ## References
 
